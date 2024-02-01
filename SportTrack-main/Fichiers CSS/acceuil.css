@@ -1,0 +1,61 @@
+/* Réinitialiser les styles par défaut du navigateur pour coriger un bug d'affichage*/
+body, h1, header,footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de base pour le corps de la page */
+body {
+	background-image: url('https://www.jeromeaugerkine.com/wp-content/uploads/2015/03/COVER-Alcool-et-sport-est-ce-compatible-_.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-position: center; 
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+h1{
+	color : white;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Style pour le bouton d'enregistrement */
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+/*Style du header*/
+header{
+    background-color: #333;
+    text-align: center;
+    border-bottom-style : solid; 
+    border-color: white;
+}
+
+/* Style du footer */
+footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 10px 0;
+}

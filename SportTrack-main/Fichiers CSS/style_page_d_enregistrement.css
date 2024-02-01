@@ -1,0 +1,70 @@
+
+/* Style de base pour le corps de la page */
+body {
+	background-image: url('https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2016/04/07/1331787218894_2/e-bike-vtt-electrique-velo-vttae'); 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-position: center; 
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+h1{
+	color : black;
+}
+/* Style du formulaire */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Style pour les champs de formulaire */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style pour des bouttons */
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+
+/* Style du footer */
+footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 10px 0;
+}
+
+/* Style du select */
+select {
+  text-align : center;
+  font-size: 0.9rem;
+  padding: 9px 85px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<Html>
+	
+	<head>
+	
+	<! Codage de la police et ecriture du titre >
+	
+	<meta charset="UTF-8">
+	<title>SportTrack : Page d'enregistrement</title>
+	
+	<! page css associé à la page d'enregistrement >
+	
+	<link rel="stylesheet" href="style page d'enregistrement.css"> 
+
+	</head>
+
+	<body>
+
+	<! Saut de lignes pour adapter l'affichage >
+	
+	<br>
+	<br>
+
+
+	<form action="/action_page.php">
+	 
+				
+			<! écriture du titre >
+			
+			<h1>Bienvenue sur SportTrack </h1>
+	
+			<! Saut de lignes pour adapter l'affichage >
+			
+			<br>
+			<br>
+			<br>
+
+		<! Création de l'espace de renseignement du prénom >
+		
+		<label for="fname">Prénom :</label><br>
+		<input type="text" id="fname" name="fname" required ><br><br>
+  
+		<! Création de l'espace de renseignement du nom >
+		
+		<label for="lname">Nom :</label><br>
+		<input type="text" id="lname" name="lname" required ><br><br>
+		
+		<! Création de l'espace de renseignement du genre >
+		
+		<label for="gender-select">Choisisez votre genre :</label><br>
+		<select name="gender" id="gender-select">
+			<option value="">--Veuillez choisir une option--</option>
+			<option value="Male">Homme</option>
+			<option value="Women">Femme</option>
+			<option value="None">Autre</option>
+		</select><br><br>
+		
+		<! Création de l'espace de renseignement du poids >
+		
+		<label for="wheight">Poids (en kg) :</label><br>
+		<input type="text" id="wheight" name="wheight" required ><br><br>
+		
+		<! Création de l'espace de renseignement de la taille >
+		
+		<label for="height">Taille (en cm) :</label><br>
+		<input type="text" id="height" name="height" required ><br><br>
+		
+		<! Création de l'espace de renseignement de la date de naissance >
+		
+		<label for="bdaymonth">Date de naissance (mois/année) :</label><br>
+		<input type="month" id="bdaymonth" name="bdaymonth" pattern="[0-9][0-9]/[0-9][0-9][0-9][0-9]" required ><br><br>
+		
+		<! Création de l'espace de renseignement de l'email >
+		
+		<label for="email">Entrer votre email :</label><br>
+		<input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="30" required /><br><br>
+		
+		<! Création de l'espace de renseignement du mot de passe >
+		
+		<label for="pass">Mot de passe (8 charactères minimum) :</label><br>
+		<input type="password" id="pass" name="password" minlength="8" required /><br><br>
+		
+		<! Boutton d'envoi des informations >
+		
+		<input type="submit" value="Créer votre compte" href = "acceuil.html"><br><br>
+ 
+	</form>
+		
+		
+	<! Boutton de retour à l'acceuil >
+	
+	<a href = "acceuil.html"><button> Retourner à la page d'acceuil</button></a>
+	
+	<! Saut de lignes pour adapter l'affichage >	
+	
+	<br>
+	<br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+	</body>
+	
+	<! Bas de page avec la commande &ensp qui permet un espace>
+	
+	<footer> 
+		@ 2023 SportTrack Tous droit réservé  &ensp;&ensp;&ensp;&ensp;&ensp; 
+		email : contact@SportTrack.com   &ensp;&ensp;&ensp;&ensp;&ensp;
+		Téléphone : 0345678423
+		<br>
+		Facebook : SportTrack &ensp;&ensp;&ensp;&ensp;&ensp; Instagram : SportTrack &ensp;&ensp;&ensp;&ensp;&ensp; X : SportTrack
+	</footer>
+
+</Html>

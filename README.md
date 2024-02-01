@@ -1,14 +1,14 @@
 # SportTrack
 
-Le fichier (machin.css) est notre fichier de source pour le css des pages toutes les pages l'utilise mais elles ont aussi des css spécialisé pour changer les fonds de pages.
-Nous avons uniformiser le nom des pages elle s'écrit comme elle s'écrirai dans un texte classique (ex : page de login.html) avec des éspaces et sans majuscule.
-Tous les intitulés de page commence par Sport Track : le nom de la page, ainsi cela permet de voir même pour l'utilisateur l'arboresence des pages.
-Nous avons rajouter une page d'acceuil qui permet de centraliser les liens des differentes autre pages.
-Mais il existe également des liens fonctionelle entre les pages comme entre login et enregistrement.
-PS : Les images utilisé ont été téléchargé mais certaines utilise un fichier d'image qui n'est pas utilisable sur la site internet comme webp ou avif.
+We have a common css for the pages, all the pages use it but they also have specialized css to change the page backgrounds.
+We have standardized the name of the pages, it is written as it would be written in a classic text (eg: login.html page) with spaces and without capital letters.
+All page titles start with Sport Track: the name of the page, so this allows the user to see the tree structure of the pages even for the user.
+We have added a home page which allows you to centralize the links from the different other pages.
+But there are also functional links between pages such as between login and registration.
+PS: The images used have been downloaded but some use an image file which cannot be used on the website like webp or avif.
 
-Sources :
-https://developer.mozilla.org/ : ce site nous as permis de comprendre comment utiliser les balises input de manière efficiente.
-https://www.w3schools.com/html/default.asp : ce site nous as permis de combler nos lacunes dans les parties les plus pousser de html.
-https://www.w3schools.com/css/default.asp : ce site nous as permis de combler nos lacunes dans les parties les plus pousser de css.
-https://openclassrooms.com/fr/ : ce site nous as permis de rendre notre csss plus propre et nous as donner de nouvelle idée pour la création de notre site.
+Sources:
+https://developer.mozilla.org/: this site allowed us to understand how to use input tags efficiently.
+https://www.w3schools.com/html/default.asp: this site allowed us to fill our gaps in the most advanced parts of html.
+https://www.w3schools.com/css/default.asp: this site allowed us to fill our gaps in the most advanced parts of css.
+https://openclassrooms.com/fr/: this site allowed us to make our css cleaner and gave us new ideas for creating our site.

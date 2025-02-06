@@ -1,0 +1,68 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Inscription - SportTrack
+    link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+    style.
+      body {
+        /* Image de fond pour le corps de la page */
+        background-image: url('https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2016/04/07/1331787218894_2/e-bike-vtt-electrique-velo-vttae');
+      }
+  body
+    form(action='' method='post')
+      h1 Bienvenue sur SportTrack
+      br
+      // Champ pour le prénom avec validation
+      label(for='prenom') Prénom :
+      input#prenom(type='text' name='prenom' required='' pattern='[A-Za-zÀ-ÿ-]{2,}' title='Veuillez entrer un prénom valide.')
+      // Champ pour le nom avec validation
+      label(for='nom') Nom :
+      input#nom(type='text' name='nom' required='' pattern='[A-Za-zÀ-ÿ-]{2,}' title='Veuillez entrer un nom valide.')
+      // Sélecteur pour le genre
+      label(for='sexe') Choisissez votre sexe :
+      select#sexe(name='sexe' required='')
+        option(value='' disabled='' selected='') --Veuillez choisir une option--
+        option(value='M') Homme
+        option(value='F') Femme
+      // Champ pour le poids avec validation
+      label(for='poids') Poids (en kg) :
+      input#poids(type='number' name='poids' min='0' step='0.1' required='')
+      // Champ pour la taille avec validation
+      label(for='taille') Taille (en cm) :
+      input#taille(type='number' name='taille' min='0' step='0.1' required='')
+      // Champ pour la date de naissance avec JavaScript pour définir la date max
+      label(for='dateNaissance') Date de naissance :
+      input#dateNaissance(type='date' name='dateNaissance' required='')
+      // Champ pour l'email avec validation
+      label(for='email') Entrer votre email :
+      input#email(type='email' name='email' placeholder='exemple@domaine.com' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required='')
+      // Champ pour le mot de passe avec validation
+      label(for='motDePasse') Mot de passe (8 caractères minimum) :
+      input#motDePasse(type='password' name='motDePasse' minlength="8" required='')
+      label(for='confirmationMotDePasse') Confirmer le mot de passe :
+      input#confirmationMotDePasse(type="password" name="confirmationMotDePasse" minlength="8" required='')
+      button(type="submit") S'inscrire
+
+    a(href='/')
+      button(type="button") Retourner à la page d'accueil
+
+    br
+    br
+    br
+    br
+
+    footer
+      p © 2024 SportTrack
+
+    script.
+      // Script pour définir la date maximale à aujourd'hui
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0');
+      var yyyy = today.getFullYear();
+      
+      today = yyyy + '-' + mm + '-' + dd;
+      
+      document.getElementById('dateNaissance').setAttribute('max', today);

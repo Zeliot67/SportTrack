@@ -1,0 +1,29 @@
+link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+h1 Résultat de la création du compte utilisateur
+
+br
+
+if message
+  p= message
+  br
+  a(href='/connect')
+    button(type='button') Se connecter
+  br
+  br
+  a(href='/')
+    button(type='button') Retourner à la page d'accueil
+
+else if erreur
+  p Erreur : #{erreur}
+  br
+  a(href='/users')
+    button(type='button') Retourner à la page de création d'utilisateur
+
+else
+  p Une erreur inconnue est survenue.
+  br
+  a(href='/users')
+    button(type='button') Retourner à la page de création d'utilisateur
+
+footer
+  p &copy; 2024 SportTrack

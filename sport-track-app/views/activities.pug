@@ -1,0 +1,66 @@
+doctype html
+html(lang="fr")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+    title Activités sportives
+    style.
+      body {
+        background-image: url('https://cdn.sanity.io/images/n8tkjjp4/production/fc86c1c1c877d1a5f1ed269a07a8ac6b0d15c66c-5906x3937.jpg?w=5906&h=3937&auto=format');
+      }
+      h1 {
+        color: white;
+      }
+      form {
+        background-color: transparent;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 20px;
+        max-width: 400px;
+        margin: 10px auto;
+      }
+  body
+    header
+      h1 Activités sportives
+    // La table pour afficher les différentes activités
+    table
+      thead
+        tr
+          th Description
+          th Date
+          th Heure de début
+          th Durée (min)
+          th Distance (km)
+          th Fréquence cardiaque min
+          th Fréquence cardiaque max
+          th Fréquence cardiaque moy
+      tbody
+        each activite in activites
+          tr
+            td= activite.description
+            td= activite.date
+            td= activite.heureDebut
+            td= activite.duree.toFixed(2)
+            td= activite.distance.toFixed(2)
+            td= activite.freqCardiaqueMin + ' bpm'
+            td= activite.freqCardiaqueMax + ' bpm'
+            td= activite.freqCardiaqueMoy.toFixed(2) + ' bpm'
+
+    br
+    a(href='/')
+      button(type='button') Retourner à la page d'accueil
+    br
+    br
+    a(href='/upload')
+      button(type='button') Ajouter des activités
+
+    br
+    br
+    br
+    br
+    br
+
+    footer
+      p © 2024 SportTrack
+

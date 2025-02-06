@@ -1,0 +1,35 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Sport Track : d&eacute;p&ocirc;t de fichier
+  // Lien vers le fichier CSS externe pour les styles
+  link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+  style.
+    body {
+    /* Image de fond pour le corps de la page */
+    background-image: url('https://cdn.sanity.io/images/n8tkjjp4/production/fc86c1c1c877d1a5f1ed269a07a8ac6b0d15c66c-5906x3937.jpg?w=5906&h=3937&auto=format');
+    }
+    form {
+    margin-top : 200px;
+    }
+// Formulaire pour le dépôt de fichier
+form(action='' method='post' enctype='multipart/form-data')
+  h1 D&eacute;p&ocirc;t de vos r&eacute;sultats sportifs
+  br
+  // Étiquette pour le champ de fichier
+  label(for='file') S&eacute;lectionnez le fichier .json contenant vos informations de routine sportive
+  br
+  br
+  // Champ de sélection de fichier, acceptant uniquement les fichiers .json
+  input#file(type='file' name='file' accept='.json' required='')
+  br
+  br
+  // Bouton pour soumettre le formulaire
+  button(type='submit') Envoyer
+// Lien vers la page d'accueil avec un bouton
+a(href='/')
+  button Retourner &agrave; la page d&apos;accueil
+// Pied de page
+footer
+  p &copy; 2024 SportTrack

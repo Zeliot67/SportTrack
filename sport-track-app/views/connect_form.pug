@@ -1,0 +1,40 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Sport Track : s&apos;identifier
+  // Lien vers le fichier CSS externe pour les styles
+  link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+  style.
+    body {
+    /* Image de fond pour le corps de la page */
+    background-image: url('https://media.gqmagazine.fr/photos/61b71e0da6fafd34f41dc6c3/16:9/w_2560%2Cc_limit/shutterstock_455008438.jpg');
+    }
+    form {
+    margin-top: 200px;
+    }
+form(action='' method='post')
+  h1 Connexion &agrave; Sport Track
+  if message
+    br
+    p= message
+    br
+  // Champ pour l'email avec validation
+  label(for='email') Email :
+  input#email(type='email' name='email' placeholder='Entrez votre adresse email' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' required='')
+  // Champ pour le mot de passe avec validation
+  label(for='motDePasse') Mot de passe :
+  input#motDePasse(type='password' name='motDePasse' placeholder='Entrez votre mot de passe' minlength='8' required='')
+  // Bouton pour soumettre le formulaire
+  button(type='submit') Connectez-vous
+// Lien vers la page d'enregistrement avec un bouton
+a(href='/users')
+  button(type='button') Cr&eacute;ez votre compte
+
+br 
+br
+
+a(href='/')
+    button(type="button") Retourner à la page d'accueil
+footer
+  p &copy; 2024 SportTrack

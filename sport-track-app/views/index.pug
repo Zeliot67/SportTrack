@@ -1,0 +1,64 @@
+doctype html
+head
+  // Codage de la police et écriture du titre
+  link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Sport Track : accueil
+  style.
+    body {
+    background-image: url('https://www.jeromeaugerkine.com/wp-content/uploads/2015/03/COVER-Alcool-et-sport-est-ce-compatible-_.jpg');
+    }
+    h1 {
+    color: white;
+    }
+    main {
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    margin-top: 150px;
+    margin-left: 650px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 20px 20px;
+    }
+header
+  // Écriture du titre
+  h1 Bienvenue sur SportTrack #{req.session.prenom}
+  // Boutons pour rejoindre les pages d'enregistrement, de modification et de dépôt
+  nav
+    if req.session.email
+      a(href='/disconnect')
+        button Se d&eacute;connecter
+    else
+      a(href='/connect')
+        button Se connecter
+      a(href='/users')
+        button Cr&eacute;ez votre compte
+main
+  // Écriture du titre
+  h2 SportTrack
+  br
+  // Texte
+  p
+    | Un site interactif permettant de vous faire un r&eacute;capitulatif de vos r&eacute;sultats sportifs et de vous accompagner dans vos s&eacute;ances de sports
+  p
+    | La seule n&eacute;cessit&eacute; est d&apos;envoyer vos r&eacute;sultats sportifs pr&eacute;sents sur votre montre connect&eacute;e
+  br
+  // Texte plus bouton pour rejoindre la page de login ou d'envoi selon l'état de la session
+  if req.session.email
+    p Envoyez vos r&eacute;sultats sportifs
+    a(href='/upload')
+      button Envoyez votre routine sportive ici
+    br
+    br
+    p Visualisez vos r&eacute;sultats sportifs ici
+    a(href='/activities')
+      button Visualisez vos r&eacute;sultats
+  else
+    p Pour pouvoir utiliser cette fonctionnalit&eacute;, connectez-vous
+    a(href='/connect')
+      button Pas connect&eacute;, connectez-vous ici
+footer
+  p &copy; 2024 SportTrack

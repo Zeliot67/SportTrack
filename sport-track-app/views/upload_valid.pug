@@ -1,0 +1,29 @@
+link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+h1 Résultat de l'envoi du fichier
+
+br
+
+if message
+  p= message
+  br
+  a(href='/activities')
+    button(type='button') Voir mes activités
+  br
+  br
+  a(href='/upload')
+    button(type='button') Retourner à la page d'envoi
+
+else if erreur
+  p Erreur : #{erreur}
+  br
+  a(href='/upload')
+    button(type='button') Retourner à la page d'envoi
+
+else
+  p Une erreur inconnue est survenue.
+  br
+  a(href='/upload')
+    button(type='button') Retourner à la page d'envoi
+
+footer
+  p &copy; 2024 SportTrack

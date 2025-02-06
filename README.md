@@ -1,2 +1,2 @@
 # SportTrack
- Application web permettant de sauvegarder des résultats d'activités sportives
+Web application written with JavaScript to save sports activity results.
